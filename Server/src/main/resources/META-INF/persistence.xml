@@ -1,0 +1,17 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="default">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>database.model.PersonEntity</class>
+        <class>database.model.ParticipationEntity</class>
+        <class>database.model.AdministratorEntity</class>
+        <class>database.model.CompetitorEntity</class>
+        <class>database.model.StageEntity</class>
+        <class>database.model.TeamEntity</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/competition"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="987654321!Z"/>
+        </properties>
+    </persistence-unit>
+</persistence>
